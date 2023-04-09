@@ -325,6 +325,17 @@
         </aside>
     </main>
 
+    <script>
+        $(document).ready(function () {
+            setInterval(function () {
+                $("main .item .hinh img").css("translate", "-100%") // di chuyển slide
+                setTimeout(function () {
+                    $("main .item .hinh img").css("translate", "0%")    // di chuyển slide trở lại vị trí ban đầu
+                }, 5000);
+            }, 10000);
+        });
+    </script>
+
     <footer>
         <a href="#"><img src="img/logo.png" alt=""></a>
         <div class="text">
