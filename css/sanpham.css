@@ -81,6 +81,7 @@ main .row .item a {
 main .row .item .price span {
     text-decoration: line-through;
     color: black;
+    transition: 1s;
 }
 
 main .row .item:hover {
@@ -95,6 +96,15 @@ main .row .item .hinh {
 
 main .row .item:hover .hinh img {
     translate: -100%;
+}
+
+main .row .item:hover span {
+    color: white;
+}
+
+main .row .item:hover {
+    background-color: black;
+    padding: 0px;
 }
 
 main .row .item img {
