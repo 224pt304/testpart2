@@ -102,12 +102,6 @@ main .row .item img {
     transition: 1s;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    color: red;
-    background-color: red;
-}
-
 @media screen and (max-width:900px) {
     main .row {
         display: flex;
