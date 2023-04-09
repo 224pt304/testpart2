@@ -85,6 +85,12 @@ header .background .icons ul {
     gap: 20px;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: red;
+}
+
+
 header .background .icons ul a {
     text-decoration: none;
 }
