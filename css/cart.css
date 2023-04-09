@@ -1,0 +1,110 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main nav {
+    max-width: 2000px;
+    width: 97%;
+    margin: auto;
+    margin-top: 6rem;
+    background-color: gainsboro;
+    display: flex;
+    padding: 0.5rem;
+}
+
+main section {
+    display: flex;
+    width: 97%;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+main section .left,
+main section .right {
+    width: 49%;
+    margin-top: 2rem;
+}
+
+main section .tieude,
+main section .left .name,
+main section .left .soluong {
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 20px;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+main section .left span.red {
+    color: red;
+    font-size: 15px;
+}
+
+main section .left .soluong a {
+    text-decoration: none;
+    color: black;
+}
+
+main section .left .soluong input {
+    width: 50%;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+main section .left .soluong button {
+    padding: 13px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    transition: 0.5s;
+    font-size: 12px;
+}
+
+main section .left .soluong button:hover {
+    background-color: black;
+    color: white;
+}
+
+main section .right input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+}
+
+main section .right label,
+main section .right textarea {
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+main section .right button {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+}
+
+@media screen and (max-width:1165px) {
+    main nav {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    main section {
+        flex-direction: column;
+    }
+
+    main section .right,
+    main section .left {
+        width: 90%;
+        margin: auto;
+    }
+}

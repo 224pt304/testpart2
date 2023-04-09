@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YaMe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/b919da1c91.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/sanpham.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+</head>
+
+<body>
+    <header>
+        <div class="background">
+            <div class="search">
+                <input type="text" placeholder="Nhập sản phẩm cần tìm">
+                <i class="fa-solid fa-x close"></i>
+            </div>
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container">
+                    <a href="main.html" style="margin-right: 10px;"><img src="img/logo.png" alt=""></a>
+                    <div class="lisst ms-auto right">
+                        <a href="#" class="dropdown-toggle" id="collectionDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="true"> BỘ SƯU TẬP </a>
+                        <ul class="mucs dropdown-menu" aria-labelledby="collectionDropdown">
+                            <li><a href="#" class="dropdown-item">Y2010 Originals</a></li>
+                            <li><a href="#" class="dropdown-item">Nghệ thuật tối giản</a></li>
+                            <li><a href="#" class="dropdown-item">Đơn giản mà Sang</a></li>
+                            <li><a href="#" class="dropdown-item">Space</a></li>
+                            <li><a href="#" class="dropdown-item">Linh vật Bbuff</a></li>
+                            <li><a href="#" class="dropdown-item">Thần Horus</a></li>
+                            <li><a href="#" class="dropdown-item">Valknut cổ đại</a></li>
+                            <li><a href="#" class="dropdown-item">Thần Anubis</a></li>
+                            <li><a href="#" class="dropdown-item">Phụ kiện thời trang</a></li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse cac_muc" id="navbarCollapse">
+                        <ul class="navbar-nav menu">
+                            <li class="nav-item"><a href="sale47K.html">SALE ĐỒNG GIÁ TỪ 47K</a></li>
+                            <li class="nav-item"><a href="salegiay_dep.html">SALE GIÀY-DÉP 50%</a></li>
+                            <li class="nav-item"><a href="#">GU TỐI GIẢN</a></li>
+                        </ul>
+                    </div>
+                    <div class="icons" style="margin-right: 10px;">
+                        <ul>
+                            <li><a href="#" class="d-flex">
+                                    <i id="search" class="fa-solid fa-magnifying-glass"></i>
+                                </a></li>
+                            <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                            <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="navbar-toggler " data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        $(document).ready(function () {
+            $("#search").click(function () {
+                $("header .search").css("left", "0px")
+            });
+        });
+
+        $(document).ready(function () {
+            $("header i.close").click(function () {
+                $("header .search").css("left", "100%")
+            });
+        });
+    </script>
+
+    <main>
+        <nav>
+            <i class="fa-solid fa-house" style="color: #000000;"></i>&ensp; / &ensp;
+            <div class="text">SALE Giày-Dép 50%</div>
+        </nav>
+
+        <div class="banner carousel slide" data-bs-ride="carousel" id="carouselslide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="active"
+                    aria-label="Slide2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="active"
+                    aria-label="Slide3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" class="active"
+                    aria-label="Slide4"></button>
+            </div>
+            <div class="banner carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/banner.jpg" alt="" width="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner1.jpg" alt="" width="49.25%">
+                    <img src="img/banner1.jpg" alt="" width="49.25%">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner2.jpg" alt="" width="49.25%">
+                    <img src="img/banner2.jpg" alt="" width="49.25%">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner3.jpg" alt="" width="49.25%">
+                    <img src="img/banner3.jpg" alt="" width="49.25%">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselslide" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselslide" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <section>
+            <a href="#">Nổi bật</a>&ensp; / &ensp;
+            <a href="#">Bán chạy</a>&ensp; / &ensp;
+            <a href="#">Mới</a>
+        </section>
+
+        <aside>
+            <div class="row">
+                <div class="item col-sm-3">
+                    <a href="#">
+                        <div class="hinh">
+                            <img src="img/giay1.jpg" alt="">
+                            <img src="img/giay1nguoi.jpg" alt="">
+                        </div>
+                        <div class="price"><span>227K</span> 97K</div>
+                    </a>
+                </div>
+                <div class="item col-sm-3">
+                    <a href="#">
+                        <div class="hinh">
+                            <img src="img/giay2.jpg" alt="">
+                            <img src="img/giay2nguoi.jpg" alt="">
+                        </div>
+                        <div class="price"><span>227K</span> 97K</div>
+                    </a>
+                </div>
+                <div class="item col-sm-3">
+                    <a href="#">
+                        <div class="hinh">
+                            <img src="img/giay3.jpg" alt="">
+                            <img src="img/giay3nguoi.jpg" alt="">
+                        </div>
+                        <div class="price"><span>227K</span> 97K</div>
+                    </a>
+                </div>
+                <div class="item col-sm-3">
+                    <a href="#">
+                        <div class="hinh">
+                            <img src="img/giay4.jpg" alt="">
+                            <img src="img/giay4nguoi.jpg" alt="">
+                        </div>
+                        <div class="price"><span>227K</span> 97K</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item col-sm-3">
+                    <a href="#">
+                        <div class="hinh">
+                            <img src="img/giay5.jpg" alt="">
+                            <img src="img/giay5nguoi.jpg" alt="">
+                        </div>
+                        <div class="price"><span>227K</span> 97K</div>
+                    </a>
+                </div>
+                <div class="item col-sm-3">
+                    <a href="#">
+                        <div class="hinh">
+                            <img src="img/giay6.jpg" alt="">
+                            <img src="img/giay6nguoi.jpg" alt="">
+                        </div>
+                        <div class="price"><span>227K</span> 97K</div>
+                    </a>
+                </div>
+                <div class="item col-sm-3">
+                    <a href="#">
+                        <div class="hinh">
+                            <img src="img/giay7.jpg" alt="">
+                            <img src="img/giay7nguoi.jpg" alt="">
+                        </div>
+                        <div class="price"><span>227K</span> 97K</div>
+                    </a>
+                </div>
+                <div class="item col-sm-3">
+                    <a href="#">
+                        <div class="hinh">
+                            <img src="img/giay8.jpg" alt="">
+                            <img src="img/giay8nguoi.jpg" alt="">
+                        </div>
+                        <div class="price"><span>227K</span> 97K</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item col-sm-3">
+                    <a href="#">
+                        <div class="hinh">
+                            <img src="img/giay9.jpg" alt="">
+                            <img src="img/giay9nguoi.jpg" alt="">
+                        </div>
+                        <div class="price"><span>227K</span> 97K</div>
+                    </a>
+                </div>
+                <div class="item col-sm-3">
+                    <a href="#">
+                        <div class="hinh">
+                            <img src="img/giay10.jpg" alt="">
+                            <img src="img/giay10nguoi.jpg" alt="">
+                        </div>
+                        <div class="price"><span>227K</span> 97K</div>
+                    </a>
+                </div>
+                <div class="item col-sm-3">
+                    <a href="#">
+                        <div class="hinh">
+                            <img src="img/giay11.jpg" alt="">
+                            <img src="img/giay11nguoi.jpg" alt="">
+                        </div>
+                        <div class="price"><span>227K</span> 97K</div>
+                    </a>
+                </div>
+                <div class="item col-sm-3">
+                    <a href="#">
+                        <div class="hinh">
+                            <img src="img/giay12.jpg" alt="">
+                            <img src="img/giay12nguoi.jpg" alt="">
+                        </div>
+                        <div class="price"><span>227K</span> 97K</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item col-sm-3">
+                    <a href="#">
+                        <div class="hinh">
+                            <img src="img/giay17.jpg" alt="">
+                            <img src="img/giay17nguoi.jpg" alt="">
+                        </div>
+                        <div class="price"><span>227K</span> 97K</div>
+                    </a>
+                </div>
+                <div class="item col-sm-3">
+                    <a href="#">
+                        <div class="hinh">
+                            <img src="img/giay18.jpg" alt="">
+                            <img src="img/giay18nguoi.jpg" alt="">
+                        </div>
+                        <div class="price"><span>227K</span> 97K</div>
+                    </a>
+                </div>
+                <div class="item col-sm-3">
+                    <a href="#">
+                        <div class="hinh">
+                            <img src="img/giay19.jpg" alt="">
+                            <img src="img/giay19nguoi.jpg" alt="">
+                        </div>
+                        <div class="price"><span>227K</span> 97K</div>
+                    </a>
+                </div>
+                <div class="item col-sm-3">
+                    <a href="#">
+                        <div class="hinh">
+                            <img src="img/giay20.jpg" alt="">
+                            <img src="img/giay20nguoi.jpg" alt="">
+                        </div>
+                        <div class="price"><span>227K</span> 97K</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item col-sm-3">
+                    <a href="#">
+                        <div class="hinh">
+                            <img src="img/giay5.jpg" alt="">
+                            <img src="img/giay5nguoi.jpg" alt="">
+                        </div>
+                        <div class="price"><span>227K</span> 97K</div>
+                    </a>
+                </div>
+                <div class="item col-sm-3">
+                    <a href="#">
+                        <div class="hinh">
+                            <img src="img/giay6.jpg" alt="">
+                            <img src="img/giay6nguoi.jpg" alt="">
+                        </div>
+                        <div class="price"><span>227K</span> 97K</div>
+                    </a>
+                </div>
+                <div class="item col-sm-3">
+                    <a href="#">
+                        <div class="hinh">
+                            <img src="img/giay7.jpg" alt="">
+                            <img src="img/giay7nguoi.jpg" alt="">
+                        </div>
+                        <div class="price"><span>227K</span> 97K</div>
+                    </a>
+                </div>
+                <div class="item col-sm-3">
+                    <a href="#">
+                        <div class="hinh">
+                            <img src="img/giay8.jpg" alt="">
+                            <img src="img/giay8nguoi.jpg" alt="">
+                        </div>
+                        <div class="price"><span>227K</span> 97K</div>
+                    </a>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <a href="#"><img src="img/logo.png" alt=""></a>
+        <div class="text">
+            Đặt hàng và thu tiền tận nơi toàn quốc <br>
+            <span>(028) 7307 1441</span> <br>
+            <a href="#">Than phiền/Góp ý</a>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="name">Tp. Hồ Chí Minh</div> <br>
+                YaMe Q.10: 770F, Sư Vạn Hạnh (nd) <br>
+                YaMe Q.5: 190, Nguyễn Trãi <br>
+                YaMe Q.6: 102 Hậu Giang <br>
+                YaMe Q.7: 323 Huỳnh Tấn Phát <br>
+                YaMe Q.9: 114 Đỗ Xuân Hợp <br>
+                YaMe Q9: 200 Lê Văn Việt <br>
+                YaMe Q12: 290 Phan Văn Hớn <br>
+                YaMe Q.BT: 138 Lê Văn Duyệt <br>
+                YaMe Tân Phú 2: 189 Hòa Bình <br>
+                YaMe Q.Bình Tân: 232 Lê Văn Quới <br>
+                YaMe Gò Vấp: 417, Quang Trung <br>
+                YaMe Gò Vấp 2: 1096 Quang Trung <br>
+                YaMe Hóc Môn: 39 Quang Trung <br>
+                YaMe Thủ Đức: 336, Võ Văn Ngân <br>
+                YaMe Củ Chi: 176 Liêu Bình Hương <br>
+                YaMe Bình Chánh 1: 566 Quốc Lộ 50 <br>
+            </div>
+            <div class="col-sm-4">
+                <div class="name">Đông Nam Bộ & Tây Nguyên</div> <br>
+                YaMe Tp.Thủ Dầu Một: 187, Yersin <br>
+                YaMe Tp. Dĩ An: 82A Nguyễn An Ninh <br>
+                YaMe Tp. Thuận An: 132 Ngô Quyền <br>
+                YaMe Biên Hòa: 30, Dương Tử Giang <br>
+                YaMe Vũng Tàu: 528 Trương Công Định <br>
+                YaMe Tây Ninh: 586 Cách Mạng Tháng 8 <br>
+                YaMe Đồng Xoài: 766 Phú Riềng Đỏ <br>
+                YaMe Buôn Ma Thuột: 64 Phan Chu Trinh <br>
+            </div>
+            <div class="col-sm-4">
+                <div class="name">Tây Nam Bộ</div> <br>
+                YaMe Cần Thơ: 45 đ. 3 Tháng 2 <br>
+                YaMe Cần Thơ: 381B Nguyễn Văn Cừ <br>
+                YaMe Tân An: 492 Hùng Vương <br>
+                YaMe Mỹ Tho: 326 đường Ấp Bắc <br>
+                YaMe Cái Bè: 455 ĐT875 Khu 4 <br>
+                YaMe Sa Đéc - 289 Nguyễn Sinh Sắc <br>
+                YaMe Cgiay Lãnh: 66A Tôn Đức Thắng <br>
+                YaMe Vĩnh Long: 27A Phạm Thái Bường <br>
+                YaMe Trà Vinh: 09 Nguyễn Đáng <br>
+                YaMe Long Xuyên: 47 Tôn Đức Thắng <br>
+                YaMe Tp. Rạch Giá: 290 Nguyễn Trung Trực <br>
+                YaMe Sóc Trăng: 126 Tôn Đức Thắng <br>
+                YaMe Cà Mau: 111 Trần Hưng Đạo <br>
+            </div>
+        </div>
+
+        <div class="final_line">
+            <div class="text">
+                <span>© 2023 - CÔNG TY TNHH YAME VN</span> <br>
+                Giấy CNĐKDN: 0310874914 – Ngày cấp: 25/11/2011 - Cơ quan cấp: Phòng Đăng Ký Kinh Doanh – Sở Kế Hoạch và
+                Đầu Tư TP.HCM <br>
+                Địa chỉ đăng ký kinh doanh: 766/3B-3C Sư Vạn Hạnh (Nối dài), Phường 12, Quận 10, TP.HCM - Điện thoại:
+                (028) 3868 4857 - Mua hàng: (028) 7307 1441 - Email: cskh@yame.vn
+            </div>
+            <img src="img/dathongbao.png" alt="">
+        </div>
+    </footer>
+</body>
+
+</html>

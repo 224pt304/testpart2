@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YaMe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/b919da1c91.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="background">
+            <div class="search">
+                <input type="text" placeholder="Nhập sản phẩm cần tìm">
+                <i class="fa-solid fa-x close"></i>
+            </div>
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container">
+                    <a href="main.html" style="margin-right: 10px;"><img src="img/logo.png" alt=""></a>
+                    <div class="lisst ms-auto right">
+                        <a href="#" class="dropdown-toggle" id="collectionDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="true"> BỘ SƯU TẬP </a>
+                        <ul class="mucs dropdown-menu" aria-labelledby="collectionDropdown">
+                            <li><a href="#" class="dropdown-item">Y2010 Originals</a></li>
+                            <li><a href="#" class="dropdown-item">Nghệ thuật tối giản</a></li>
+                            <li><a href="#" class="dropdown-item">Đơn giản mà Sang</a></li>
+                            <li><a href="#" class="dropdown-item">Space</a></li>
+                            <li><a href="#" class="dropdown-item">Linh vật Bbuff</a></li>
+                            <li><a href="#" class="dropdown-item">Thần Horus</a></li>
+                            <li><a href="#" class="dropdown-item">Valknut cổ đại</a></li>
+                            <li><a href="#" class="dropdown-item">Thần Anubis</a></li>
+                            <li><a href="#" class="dropdown-item">Phụ kiện thời trang</a></li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse cac_muc" id="navbarCollapse">
+                        <ul class="navbar-nav menu">
+                            <li class="nav-item"><a href="sale47K.html">SALE ĐỒNG GIÁ TỪ 47K</a></li>
+                            <li class="nav-item"><a href="salegiay_dep.html">SALE GIÀY-DÉP 50%</a></li>
+                            <li class="nav-item"><a href="#">GU TỐI GIẢN</a></li>
+                        </ul>
+                    </div>
+                    <div class="icons" style="margin-right: 10px;">
+                        <ul>
+                            <li><a href="#" class="d-flex">
+                                    <i id="search" class="fa-solid fa-magnifying-glass"></i>
+                                </a></li>
+                            <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                            <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="navbar-toggler " data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        $(document).ready(function () {
+            $("#search").click(function () {
+                $("header .search").css("left", "0px")
+            });
+        });
+
+        $(document).ready(function () {
+            $("header i.close").click(function () {
+                $("header .search").css("left", "100%")
+            });
+        });
+    </script>
+
+    <main>
+        <nav>
+            <i class="fa-solid fa-house" style="color: #000000;"></i>&ensp; / &ensp;
+            <div class="text">Thông tin giỏ hàng của bạn</div>
+        </nav>
+
+        <section>
+            <div class="left">
+                <div class="tieude h4 fw-bold">Chi tiết đơn hàng</div>
+                <div class="item">
+                    <div class="name d-flex align-items-center">
+                        <img src="img/ao1.jpg" alt="" width="70">
+                        <div>Áo tiger a23 2023 <br>
+                            Màu đen, size: M / 79 000 VND <span class="red">(Tiết kiệm: 150 000)</span>
+                        </div>
+                    </div>
+                    <div class="soluong d-flex align-items-center">
+                        <a href="#"><i class="fa-solid fa-trash"></i> Xóa</a>
+                        <input type="text" value="1">
+                        <button>UPDATE</button>
+                        <div class="price">= 79 000 VND</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="name d-flex align-items-center">
+                        <img src="img/ao6.jpg" alt="" width="70">
+                        <div>Áo phông trắng 2023 <br>
+                            Màu đen, size: L / 179 000 VND <span class="red">(Tiết kiệm: 50 000)</span>
+                        </div>
+                    </div>
+                    <div class="soluong d-flex align-items-center">
+                        <a href="#"><i class="fa-solid fa-trash"></i> Xóa</a>
+                        <input type="text" value="1">
+                        <button>UPDATE</button>
+                        <div class="price">= 179 000 VND</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="name d-flex align-items-center">
+                        <img src="img/ao10.jpg" alt="" width="70">
+                        <div>Áo phông xanh 2023 <br>
+                            Màu đen, size: S / 179 000 VND <span class="red">(Tiết kiệm: 50 000)</span>
+                        </div>
+                    </div>
+                    <div class="soluong d-flex align-items-center">
+                        <a href="#"><i class="fa-solid fa-trash"></i> Xóa</a>
+                        <input type="text" value="1">
+                        <button>UPDATE</button>
+                        <div class="price">= 179 000 VND</div>
+                    </div>
+                </div>
+
+                <div class="Tong mt-2">
+                    Tổng: 437 000 VND
+                </div>
+            </div>
+            <div class="right">
+                <span class="tieude h4 fw-bold border-0">Người mua/nhận hàng</span>
+                <form action="" class="d-flex row">
+                    <label for="">Tên</label>
+                    <input type="text" placeholder="Tên người nhận">
+                    <label for="">Điện thoại liên lạc</label>
+                    <input type="text" placeholder="Số điện thoại">
+                    <div class="rdo">
+                        <input type="radio" name="locate" id="location" checked>
+                        <label for="location">Nhận hành tại nhà/công ty/bưu điện</label> <br>
+                        <input type="radio" name="locate" id="location">
+                        <label for="loacation">Nhận hàng tại cửa hàng YaMe gần nhất</label>
+                    </div>
+                    <input type="text" placeholder="Địa chỉ nhận hàng">
+                    <label for="">Ghi chú</label>
+                    <textarea rows="3" cols="30"></textarea>
+                    <button class="text-bg-info ">Đặt hàng</button>
+                    <hr>
+                    <button class="text-bg-warning">CẦN SẢN PHẨM KHÁC? TIẾP TỤC MUA HÀNG</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#"><img src="img/logo.png" alt=""></a>
+        <div class="text">
+            Đặt hàng và thu tiền tận nơi toàn quốc <br>
+            <span>(028) 7307 1441</span> <br>
+            <a href="#">Than phiền/Góp ý</a>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="name">Tp. Hồ Chí Minh</div> <br>
+                YaMe Q.10: 770F, Sư Vạn Hạnh (nd) <br>
+                YaMe Q.5: 190, Nguyễn Trãi <br>
+                YaMe Q.6: 102 Hậu Giang <br>
+                YaMe Q.7: 323 Huỳnh Tấn Phát <br>
+                YaMe Q.9: 114 Đỗ Xuân Hợp <br>
+                YaMe Q9: 200 Lê Văn Việt <br>
+                YaMe Q12: 290 Phan Văn Hớn <br>
+                YaMe Q.BT: 138 Lê Văn Duyệt <br>
+                YaMe Tân Phú 2: 189 Hòa Bình <br>
+                YaMe Q.Bình Tân: 232 Lê Văn Quới <br>
+                YaMe Gò Vấp: 417, Quang Trung <br>
+                YaMe Gò Vấp 2: 1096 Quang Trung <br>
+                YaMe Hóc Môn: 39 Quang Trung <br>
+                YaMe Thủ Đức: 336, Võ Văn Ngân <br>
+                YaMe Củ Chi: 176 Liêu Bình Hương <br>
+                YaMe Bình Chánh 1: 566 Quốc Lộ 50 <br>
+            </div>
+            <div class="col-sm-4">
+                <div class="name">Đông Nam Bộ & Tây Nguyên</div> <br>
+                YaMe Tp.Thủ Dầu Một: 187, Yersin <br>
+                YaMe Tp. Dĩ An: 82A Nguyễn An Ninh <br>
+                YaMe Tp. Thuận An: 132 Ngô Quyền <br>
+                YaMe Biên Hòa: 30, Dương Tử Giang <br>
+                YaMe Vũng Tàu: 528 Trương Công Định <br>
+                YaMe Tây Ninh: 586 Cách Mạng Tháng 8 <br>
+                YaMe Đồng Xoài: 766 Phú Riềng Đỏ <br>
+                YaMe Buôn Ma Thuột: 64 Phan Chu Trinh <br>
+            </div>
+            <div class="col-sm-4">
+                <div class="name">Tây Nam Bộ</div> <br>
+                YaMe Cần Thơ: 45 đ. 3 Tháng 2 <br>
+                YaMe Cần Thơ: 381B Nguyễn Văn Cừ <br>
+                YaMe Tân An: 492 Hùng Vương <br>
+                YaMe Mỹ Tho: 326 đường Ấp Bắc <br>
+                YaMe Cái Bè: 455 ĐT875 Khu 4 <br>
+                YaMe Sa Đéc - 289 Nguyễn Sinh Sắc <br>
+                YaMe Cao Lãnh: 66A Tôn Đức Thắng <br>
+                YaMe Vĩnh Long: 27A Phạm Thái Bường <br>
+                YaMe Trà Vinh: 09 Nguyễn Đáng <br>
+                YaMe Long Xuyên: 47 Tôn Đức Thắng <br>
+                YaMe Tp. Rạch Giá: 290 Nguyễn Trung Trực <br>
+                YaMe Sóc Trăng: 126 Tôn Đức Thắng <br>
+                YaMe Cà Mau: 111 Trần Hưng Đạo <br>
+            </div>
+        </div>
+
+        <div class="final_line">
+            <div class="text">
+                <span>© 2023 - CÔNG TY TNHH YAME VN</span> <br>
+                Giấy CNĐKDN: 0310874914 – Ngày cấp: 25/11/2011 - Cơ quan cấp: Phòng Đăng Ký Kinh Doanh – Sở Kế Hoạch và
+                Đầu Tư TP.HCM <br>
+                Địa chỉ đăng ký kinh doanh: 766/3B-3C Sư Vạn Hạnh (Nối dài), Phường 12, Quận 10, TP.HCM - Điện thoại:
+                (028) 3868 4857 - Mua hàng: (028) 7307 1441 - Email: cskh@yame.vn
+            </div>
+            <img src="img/dathongbao.png" alt="">
+        </div>
+    </footer>
+</body>
+
+</html>

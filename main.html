@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YaMe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/b919da1c91.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/sanpham.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="background">
+            <div class="search">
+                <input type="text" placeholder="Nhập sản phẩm cần tìm">
+                <i class="fa-solid fa-x close"></i>
+            </div>
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container">
+                    <a href="main.html" style="margin-right: 10px;"><img src="img/logo.png" alt=""></a>
+                    <div class="lisst ms-auto right">
+                        <a href="#" class="dropdown-toggle" id="collectionDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="true"> BỘ SƯU TẬP </a>
+                        <ul class="mucs dropdown-menu" aria-labelledby="collectionDropdown">
+                            <li><a href="#" class="dropdown-item">Y2010 Originals</a></li>
+                            <li><a href="#" class="dropdown-item">Nghệ thuật tối giản</a></li>
+                            <li><a href="#" class="dropdown-item">Đơn giản mà Sang</a></li>
+                            <li><a href="#" class="dropdown-item">Space</a></li>
+                            <li><a href="#" class="dropdown-item">Linh vật Bbuff</a></li>
+                            <li><a href="#" class="dropdown-item">Thần Horus</a></li>
+                            <li><a href="#" class="dropdown-item">Valknut cổ đại</a></li>
+                            <li><a href="#" class="dropdown-item">Thần Anubis</a></li>
+                            <li><a href="#" class="dropdown-item">Phụ kiện thời trang</a></li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse cac_muc" id="navbarCollapse">
+                        <ul class="navbar-nav menu">
+                            <li class="nav-item"><a href="sale47K.html">SALE ĐỒNG GIÁ TỪ 47K</a></li>
+                            <li class="nav-item"><a href="salegiay_dep.html">SALE GIÀY-DÉP 50%</a></li>
+                            <li class="nav-item"><a href="#">GU TỐI GIẢN</a></li>
+                        </ul>
+                    </div>
+                    <div class="icons" style="margin-right: 10px;">
+                        <ul>
+                            <li><a href="#"><i id="search" class="fa-solid fa-magnifying-glass"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                            <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="navbar-toggler " data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        $(document).ready(function () {
+            $("#search").click(function () {
+                $("header .search").css("left", "0px")
+            });
+        });
+
+        $(document).ready(function () {
+            $("header i.close").click(function () {
+                $("header .search").css("left", "100%")
+            });
+        });
+    </script>
+
+    <main>
+        <div class="row d-flex flex-wrap align-items-center mt-5">
+            <div class="col-sm-6">
+                <img src="img/banner2.jpg" alt="" width="100%">
+            </div>
+            <div class="col-sm-6 d-flex flex-column">
+                <div class="text">
+                    <span class="h2">GIÀY DÉP SALE upto 50%</span> <br>
+                    <span class="h6">Các sản phẩm đang được SALE lên đến 50%. Toàn những mẫu giày dép cực HOT. Sắm
+                        ngay</span>
+                </div>
+                <div class="row">
+                    <div class="item col-sm-2">
+                        <a href="#">
+                            <div class="hinh">
+                                <img src="img/giay1.jpg" alt="">
+                                <img src="img/giay1nguoi.jpg" alt="">
+                            </div>
+                            <div class="price"><span>227K</span> 97K</div>
+                        </a>
+                    </div>
+                    <div class="item col-sm-2">
+                        <a href="#">
+                            <div class="hinh">
+                                <img src="img/giay2.jpg" alt="">
+                                <img src="img/giay2nguoi.jpg" alt="">
+                            </div>
+                            <div class="price"><span>227K</span> 97K</div>
+                        </a>
+                    </div>
+                    <div class="item col-sm-2">
+                        <a href="#">
+                            <div class="hinh">
+                                <img src="img/giay3.jpg" alt="">
+                                <img src="img/giay3nguoi.jpg" alt="">
+                            </div>
+                            <div class="price"><span>227K</span> 97K</div>
+                        </a>
+                    </div>
+                    <div class="item col-sm-2">
+                        <a href="#">
+                            <div class="hinh">
+                                <img src="img/giay4.jpg" alt="">
+                                <img src="img/giay4nguoi.jpg" alt="">
+                            </div>
+                            <div class="price"><span>227K</span> 97K</div>
+                        </a>
+                    </div>
+                    <div class="item col-sm-2">
+                        <a href="#">
+                            <div class="hinh">
+                                <img src="img/giay5.jpg" alt="">
+                                <img src="img/giay5nguoi.jpg" alt="">
+                            </div>
+                            <div class="price"><span>227K</span> 97K</div>
+                        </a>
+                    </div>
+                    <div class="item col-sm-2">
+                        <a href="#">
+                            <div class="hinh">
+                                <img src="img/giay6.jpg" alt="">
+                                <img src="img/giay6nguoi.jpg" alt="">
+                            </div>
+                            <div class="price"><span>227K</span> 97K</div>
+                        </a>
+                    </div>
+                </div>
+                <a href="salegiay_dep.html"><button class="float-end p-2 border-0">XEM THÊM CÁC SẢN PHẨM
+                        KHÁC</button></a>
+            </div>
+        </div>
+
+        <div class="row mid d-flex flex-wrap align-items-center mt-5">
+            <div class="col-sm-6 d-flex flex-column">
+                <div class="text">
+                    <span class="h2">MỞ BÁN MỚI</span> <br>
+                    <span class="h6">SALE 20% - Mở bán nhiều sản phẩm cực chất. . Bên cạnh đó còn được SALE 20% 3 ngày
+                        đầu mở bán (07-08-09/04)</span>
+                </div>
+                <div class="row">
+                    <div class="item col-sm-2">
+                        <a href="#">
+                            <div class="hinh">
+                                <img src="img/ao7.jpg" alt="">
+                                <img src="img/ao7nguoi.jpg" alt="">
+                            </div>
+                            <div class="price"><span>227K</span> 97K</div>
+                        </a>
+                    </div>
+                    <div class="item col-sm-2">
+                        <a href="#">
+                            <div class="hinh">
+                                <img src="img/ao8.jpg" alt="">
+                                <img src="img/ao8nguoi.jpg" alt="">
+                            </div>
+                            <div class="price"><span>227K</span> 97K</div>
+                        </a>
+                    </div>
+                    <div class="item col-sm-2">
+                        <a href="#">
+                            <div class="hinh">
+                                <img src="img/ao9.jpg" alt="">
+                                <img src="img/ao9nguoi.jpg" alt="">
+                            </div>
+                            <div class="price"><span>227K</span> 97K</div>
+                        </a>
+                    </div>
+                    <div class="item col-sm-2">
+                        <a href="#">
+                            <div class="hinh">
+                                <img src="img/ao10.jpg" alt="">
+                                <img src="img/ao10nguoi.jpg" alt="">
+                            </div>
+                            <div class="price"><span>227K</span> 97K</div>
+                        </a>
+                    </div>
+                    <div class="item col-sm-2">
+                        <a href="#">
+                            <div class="hinh">
+                                <img src="img/ao11.jpg" alt="">
+                                <img src="img/ao11nguoi.jpg" alt="">
+                            </div>
+                            <div class="price"><span>227K</span> 97K</div>
+                        </a>
+                    </div>
+                    <div class="item col-sm-2">
+                        <a href="#">
+                            <div class="hinh">
+                                <img src="img/ao12.jpg" alt="">
+                                <img src="img/ao12nguoi.jpg" alt="">
+                            </div>
+                            <div class="price"><span>227K</span> 97K</div>
+                        </a>
+                    </div>
+                </div>
+                <a href="sale47K.html"><button class="float-start p-2 border-0">XEM THÊM CÁC SẢN PHẨM
+                        KHÁC</button></a>
+            </div>
+            <div class="col-sm-6">
+                <img src="img/banner1.jpg" alt="" width="100%">
+            </div>
+        </div>
+        <div class="row d-flex flex-wrap align-items-center mt-5">
+            <div class="col-sm-6">
+                <img src="img/banner3.jpg" alt="" width="100%">
+            </div>
+            <div class="col-sm-6 d-flex flex-column">
+                <div class="text">
+                    <span class="h2">ĐỒNG GIÁ CHỈ TỪ 47K</span> <br>
+                    <span class="h6">Sale đồng giá nhiều sản phẩm HOT. Sắm ngay ao</span>
+                </div>
+                <div class="row">
+                    <div class="item col-sm-2">
+                        <a href="#">
+                            <div class="hinh">
+                                <img src="img/ao1.jpg" alt="">
+                                <img src="img/ao1nguoi.jpg" alt="">
+                            </div>
+                            <div class="price"><span>227K</span> 97K</div>
+                        </a>
+                    </div>
+                    <div class="item col-sm-2">
+                        <a href="#">
+                            <div class="hinh">
+                                <img src="img/ao2.jpg" alt="">
+                                <img src="img/ao2nguoi.jpg" alt="">
+                            </div>
+                            <div class="price"><span>227K</span> 97K</div>
+                        </a>
+                    </div>
+                    <div class="item col-sm-2">
+                        <a href="#">
+                            <div class="hinh">
+                                <img src="img/ao3.jpg" alt="">
+                                <img src="img/ao3nguoi.jpg" alt="">
+                            </div>
+                            <div class="price"><span>227K</span> 97K</div>
+                        </a>
+                    </div>
+                    <div class="item col-sm-2">
+                        <a href="#">
+                            <div class="hinh">
+                                <img src="img/ao4.jpg" alt="">
+                                <img src="img/ao4nguoi.jpg" alt="">
+                            </div>
+                            <div class="price"><span>227K</span> 97K</div>
+                        </a>
+                    </div>
+                    <div class="item col-sm-2">
+                        <a href="#">
+                            <div class="hinh">
+                                <img src="img/ao5.jpg" alt="">
+                                <img src="img/ao5nguoi.jpg" alt="">
+                            </div>
+                            <div class="price"><span>227K</span> 97K</div>
+                        </a>
+                    </div>
+                    <div class="item col-sm-2">
+                        <a href="#">
+                            <div class="hinh">
+                                <img src="img/ao6.jpg" alt="">
+                                <img src="img/ao6nguoi.jpg" alt="">
+                            </div>
+                            <div class="price"><span>227K</span> 97K</div>
+                        </a>
+                    </div>
+                </div>
+                <a href="sale47K.html"><button class="float-end p-2 border-0">XEM THÊM CÁC SẢN PHẨM
+                        KHÁC</button></a>
+            </div>
+        </div>
+    </main>
+
+    <aside style="width: 97%; max-width: 2000px; margin: auto;">
+        <span>@HOWTOWEAR</span> <br>
+        <div class="anh w-100 d-flex justify-content-between flex-row">
+            <img src="img/hot1.jpg" alt="" width="30%">
+            <img src="img/hot2.jpg" alt="" width="30%">
+            <img src="img/hot3.jpg" alt="" width="30%">
+        </div>
+    </aside>
+
+    <section>
+        <div class="model d-flex align-items-center gap-3 mt-5">
+            <img src="img/main1.jpg" alt="" width="49%">
+            <div class="text w-50 d-flex flex-column">
+                <span class="h2">TRAVEL SEASON</span> <br>
+                <span class="h6">Thời điểm đẹp nhất để đi du lịch đã đến. Bạn đã có kế hoạch cho chuyến đi sắp tới của
+                    mình chưa? YaMe có một vài ý tưởng hay ho dành cho bạn này! Let's go!</span> <br>
+                <button>MUA NGAY BÂY GIỜ</button>
+            </div>
+        </div>
+
+        <div class="model d-flex align-items-center gap-3 mt-5">
+            <div class="text w-50 d-flex flex-column">
+                <span class="h2">ĐƠN GIẢN LÀ PHONG CÁCH</span> <br>
+                <span class="h6">Những món trang phục cơ bản và cổ điển luôn cần thiết cho mọi tủ quần áo. ĐƠN GIẢN cũng
+                    là một PHONG CÁCH</span> <br>
+                <button>MUA NGAY BÂY GIỜ</button>
+            </div>
+            <img src="img/main2.jpg" alt="" width="49%">
+        </div>
+
+        <div class="model d-flex align-items-center gap-3 mt-5">
+            <img src="img/main3.jpg" alt="" width="49%">
+            <div class="text w-50 d-flex flex-column">
+                <span class="h2">NGHỆ THUẬT TỐI GIẢN</span> <br>
+                <span class="h6">Tối giản - Là nền tảng của mọi phong cách" YaMe sẽ mang đến cho bạn những món trang
+                    phục trơn tru và tối giản nhất, hãy nhấn nhá thêm cá tính của mình để tạo nên những phong cách riêng
+                    biệt cho chính bạn.</span> <br>
+                <button>MUA NGAY BÂY GIỜ</button>
+            </div>
+        </div>
+
+        <div class="model d-flex align-items-center gap-3 mt-5">
+            <div class="text w-50 d-flex flex-column">
+                <span class="h2">THỂ THAO</span> <br>
+                <span class="h6">Những món trang phục thiết kế và chất liệu chuyên biệt dành riêng cho vận động. Yếu
+                    thích thể thao, rèn luyện sức khỏe ngay bây giờ nhé, chưa muộn đâu!</span> <br>
+                <button>MUA NGAY BÂY GIỜ</button>
+            </div>
+            <img src="img/main4.jpg" alt="" width="49%">
+        </div>
+
+        <div class="model d-flex align-items-center gap-3 mt-5">
+            <img src="img/main5.jpg" alt="" width="49%">
+            <div class="text w-50 d-flex flex-column">
+                <span class="h2">Y2010 - Y-ORIGINAL</span> <br>
+                <span class="h6">Đơn giản và tinh tế, nhưng vẫn không hề nhàm chám khi đén với Bộ Sưu Tập Y Nguyên Bản,
+                    nơi các nhà thiết kế YaMe có nhiều cảm hứng nhất dựa trên chính những biểu tượng logo của
+                    mình.</span> <br>
+                <button>MUA NGAY BÂY GIỜ</button>
+            </div>
+        </div>
+
+        <div class="model d-flex align-items-center gap-3 mt-5">
+            <div class="text w-50 d-flex flex-column">
+                <span class="h2">NGÂN HÀ</span> <br>
+                <span class="h6">Mang bạn đến một vũ trụ bất tận, Gu ngân hà mang đến những thiết kế trẻ trung và xu
+                    hướng. Bạn say mê những xu hướng thời trang Steetwear biến tấu không ngừng, hãy chọn Gu Ngân Hà, sẽ
+                    mang đến cho bạn đầy đủ các loại trang phục giúp bạn thể hiện cá tính.</span> <br>
+                <button>MUA NGAY BÂY GIỜ</button>
+            </div>
+            <img src="img/main6.jpg" alt="" width="49%">
+        </div>
+
+        <div class="model d-flex align-items-center gap-3 mt-5">
+            <img src="img/main7.jpg" alt="" width="49%">
+            <div class="text w-50 d-flex flex-column">
+                <span class="h2">THẦN CỔ ĐẠI</span> <br>
+                <span class="h6">Bạn CÁ TÍNH, bạn thích NỔI BẬT, bạn mê sự ẤN TƯỢNG. Gu Thần Cổ Đại là dành cho bạn, với
+                    những món trang phục kiểu cách lấy cảm hứng từ các vị thần trong truyền thuyết 4 phương. Đi Tiệc -
+                    Đi chơi - Dạo Phố - Du lịch, hãy chọn những sét trang phục tại Gu Thần Cổ Đại.</span> <br>
+                <button>MUA NGAY BÂY GIỜ</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#"><img src="img/logo.png" alt=""></a>
+        <div class="text">
+            Đặt hàng và thu tiền tận nơi toàn quốc <br>
+            <span>(028) 7307 1441</span> <br>
+            <a href="#">Than phiền/Góp ý</a>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="name">Tp. Hồ Chí Minh</div> <br>
+                YaMe Q.10: 770F, Sư Vạn Hạnh (nd) <br>
+                YaMe Q.5: 190, Nguyễn Trãi <br>
+                YaMe Q.6: 102 Hậu Giang <br>
+                YaMe Q.7: 323 Huỳnh Tấn Phát <br>
+                YaMe Q.9: 114 Đỗ Xuân Hợp <br>
+                YaMe Q9: 200 Lê Văn Việt <br>
+                YaMe Q12: 290 Phan Văn Hớn <br>
+                YaMe Q.BT: 138 Lê Văn Duyệt <br>
+                YaMe Tân Phú 2: 189 Hòa Bình <br>
+                YaMe Q.Bình Tân: 232 Lê Văn Quới <br>
+                YaMe Gò Vấp: 417, Quang Trung <br>
+                YaMe Gò Vấp 2: 1096 Quang Trung <br>
+                YaMe Hóc Môn: 39 Quang Trung <br>
+                YaMe Thủ Đức: 336, Võ Văn Ngân <br>
+                YaMe Củ Chi: 176 Liêu Bình Hương <br>
+                YaMe Bình Chánh 1: 566 Quốc Lộ 50 <br>
+            </div>
+            <div class="col-sm-4">
+                <div class="name">Đông Nam Bộ & Tây Nguyên</div> <br>
+                YaMe Tp.Thủ Dầu Một: 187, Yersin <br>
+                YaMe Tp. Dĩ An: 82A Nguyễn An Ninh <br>
+                YaMe Tp. Thuận An: 132 Ngô Quyền <br>
+                YaMe Biên Hòa: 30, Dương Tử Giang <br>
+                YaMe Vũng Tàu: 528 Trương Công Định <br>
+                YaMe Tây Ninh: 586 Cách Mạng Tháng 8 <br>
+                YaMe Đồng Xoài: 766 Phú Riềng Đỏ <br>
+                YaMe Buôn Ma Thuột: 64 Phan Chu Trinh <br>
+            </div>
+            <div class="col-sm-4">
+                <div class="name">Tây Nam Bộ</div> <br>
+                YaMe Cần Thơ: 45 đ. 3 Tháng 2 <br>
+                YaMe Cần Thơ: 381B Nguyễn Văn Cừ <br>
+                YaMe Tân An: 492 Hùng Vương <br>
+                YaMe Mỹ Tho: 326 đường Ấp Bắc <br>
+                YaMe Cái Bè: 455 ĐT875 Khu 4 <br>
+                YaMe Sa Đéc - 289 Nguyễn Sinh Sắc <br>
+                YaMe Cgiay Lãnh: 66A Tôn Đức Thắng <br>
+                YaMe Vĩnh Long: 27A Phạm Thái Bường <br>
+                YaMe Trà Vinh: 09 Nguyễn Đáng <br>
+                YaMe Long Xuyên: 47 Tôn Đức Thắng <br>
+                YaMe Tp. Rạch Giá: 290 Nguyễn Trung Trực <br>
+                YaMe Sóc Trăng: 126 Tôn Đức Thắng <br>
+                YaMe Cà Mau: 111 Trần Hưng Đạo <br>
+            </div>
+        </div>
+
+        <div class="final_line">
+            <div class="text">
+                <span>© 2023 - CÔNG TY TNHH YAME VN</span> <br>
+                Giấy CNĐKDN: 0310874914 – Ngày cấp: 25/11/2011 - Cơ quan cấp: Phòng Đăng Ký Kinh Doanh – Sở Kế Hoạch và
+                Đầu Tư TP.HCM <br>
+                Địa chỉ đăng ký kinh doanh: 766/3B-3C Sư Vạn Hạnh (Nối dài), Phường 12, Quận 10, TP.HCM - Điện thoại:
+                (028) 3868 4857 - Mua hàng: (028) 7307 1441 - Email: cskh@yame.vn
+            </div>
+            <img src="img/dathongbao.png" alt="">
+        </div>
+    </footer>
+</body>
+
+</html>
